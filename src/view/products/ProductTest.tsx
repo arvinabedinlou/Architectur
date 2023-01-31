@@ -1,17 +1,15 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import { ChangeEvent, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/system";
 import ProductTestService from "./ProductTestService";
 import ProductModel from "../../data/model/ProductModel";
 import NormalLoading from "../../utils/NormalLoading";
-import axios from "axios";
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 export default function ProductTest() {
   const [loading, setLoading] = useState<boolean>(false);
